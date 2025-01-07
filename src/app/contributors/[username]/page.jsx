@@ -29,7 +29,7 @@ export default function ContributorRepos({ params }) {
 
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4 text-right">{username} Repositories</h1>
+      <h1 className="text-2xl font-bold mb-4 text-right">{username} Repos</h1>
       {loading ? <LoadingSpinner /> : <RepositoryList repositories={repositories} />}
     </div>
   );
