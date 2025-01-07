@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import MapModal from './MapModal';
 
-export default function Card({ contributor }) {
+export default function Card({ contributor, lastContributorRef }) {
   const [showMap, setShowMap] = useState(false);
 
   return (
-    <div className="border rounded-lg p-4 shadow-md relative transition-shadow hover:shadow-lg hover:shadow-blue-400">
+    <div
+      className="border rounded-lg p-4 shadow-md relative transition-shadow hover:shadow-lg hover:shadow-blue-400"
+      ref={lastContributorRef}  // <-- Attach ref to the last card
+    >
       {/* Location Icon */}
       <div
         className="mt-2 ml-60 relative"
