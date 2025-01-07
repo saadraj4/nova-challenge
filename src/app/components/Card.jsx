@@ -6,7 +6,7 @@ export default function Card({ contributor }) {
 
   return (
     <div className="border rounded-lg p-4 shadow-md">
-      <button className="text-blue-500 mt-2" onClick={() => setShowMap(true)}>
+      <button className="text-blue-500 mt-2" style={{marginleft:110}} onClick={() => setShowMap(true)}>
         📍 Compass
       </button>
       <img src={contributor.avatar_url} alt={contributor.login} className="w-16 h-16 rounded-full" />
