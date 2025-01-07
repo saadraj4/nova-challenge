@@ -14,8 +14,8 @@ export default function RepositoryList({ repositories }) {
 
 
         {repositories.map((repo) => (
-          <div key={repo.id}       className="border rounded-lg p-4 shadow-md relative transition-shadow hover:shadow-lg hover:shadow-blue-400"
->
+          <div key={repo.id} className="border rounded-lg p-4 shadow-md relative transition-shadow hover:shadow-lg hover:shadow-blue-400"
+          >
             <h2 className="font-bold text-lg">{repo.name}</h2>
             <p className="text-sm text-gray-600">
               {repo.fork ? 'Forked' : 'Not Forked'} | ⭐ {repo.stargazers_count} | Last updated: {formatDate(repo.updated_at)}
