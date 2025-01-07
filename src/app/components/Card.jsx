@@ -7,7 +7,7 @@ export default function Card({ contributor, lastContributorRef }) {
   return (
     <div
       className="border rounded-lg p-4 shadow-md relative transition-shadow hover:shadow-lg hover:shadow-blue-400"
-      ref={lastContributorRef}  // <-- Attach ref to the last card
+      ref={lastContributorRef}  
     >
       {/* Location Icon */}
       <div
