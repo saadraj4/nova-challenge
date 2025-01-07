@@ -20,12 +20,3 @@ const ContributorList = ({ contributors, lastContributorRef }) => {
   
   export default ContributorList;
   
-  {/*<div key={contributor.id} ref={isLast ? lastContributorRef : null}>
-              <div className="p-4 border rounded shadow-md">
-                <img src={contributor.avatar_url} alt={contributor.login} className="w-16 h-16 rounded-full" />
-                <h3>{contributor.login}</h3>
-                <p>Commits: {contributor.contributions}</p>
-                <button className="btn-compass">🔍</button> 
-                <div className="indicator">Selectable</div> 
-              </div>
-            </div>*/}
